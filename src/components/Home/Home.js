@@ -5,7 +5,7 @@ import Product from '../Product/Product'
 import RenderList from '../RenderList/RenderList'
 
 const Home = () => {
-    const [selectedProduct, setSelectedProduct] = useState()
+    const [selectedProduct, setSelectedProduct] = useState({})
     const history = useHistory()
     return (
         <div style={{ textAlign: 'center' }}>

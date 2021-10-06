@@ -1,4 +1,4 @@
-import { Home, About, Contact, Header, Products } from './components';
+import { Home, About, Contact, Header } from './components';
 import {
   BrowserRouter as Router,
   Switch,
