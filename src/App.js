@@ -1,4 +1,4 @@
-import { Home, About, Contact, Header } from './components';
+import { Home, About, Contact, Header, Cart } from './components';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +11,9 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
+          <Route path="/cart">
+            <Cart />
+          </Route>
           <Route path="/about">
             <About />
           </Route>
