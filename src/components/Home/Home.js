@@ -3,6 +3,7 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import { products } from '../../assets/productsData'
 import Product from '../Product/Product'
 import RenderList from '../RenderList/RenderList'
+import BooksList from '../BooksList/BooksList'
 
 const Home = () => {
     const [selectedProduct, setSelectedProduct] = useState({})
@@ -23,6 +24,7 @@ const Home = () => {
                     {showDetails ? <Product product={selectedProduct} handleClick={setShowDetails}  /> : history.push('/')}
                 </Route>
             </Switch>
+            <BooksList />
         </div>
     )
 }
